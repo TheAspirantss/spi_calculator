@@ -1,0 +1,377 @@
+<!--
+    DEVELOPED BY-VYOM PADALIA,parth thakkar 
+THIS IS SPI CALCULATOR FOR 3RD SEM EC NIRMA UNI.
+SOLELY FOR PROJECT AND LEARNING PURPOSE 
+-->
+<!-- /* `
+FINAL 
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPI CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+     
+</head>
+
+<body>
+    <nav class="navinfo">
+        <p class="navt">SPI CALCULATOR</p>
+        <hr class="navhr">
+        <p class="navsub">Branch-Civil Engg.</p>
+        <p class="navsub">Sem-03</p>
+    </nav>
+    <div class="main">
+        <table>
+            <tr>
+                <th>SUBJECTS</th>
+                <th>CREDITS</th>
+                <th>GRADE OBTAINED</th>
+            </tr>
+
+            <tr>
+                <td class="sub">Structural Mechanics</td>
+                <td class="sub">4 (Theory)</td>
+                <td class="">
+                    <select name="" id="s1">
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="sub">Surveying Test</td>
+                <td class="sub">4 (Theory)</td>
+                <td class="">
+                    <select name="" id="s2">
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="sub">Applied Maths for Civil </td>
+                <td class="sub">4 (Theory)</td>
+                <td class="">
+                    <select name="" id="s3">
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="sub">Construction Material</td>
+                <td class="sub">4 (Theory)</td>
+                <td class="">
+                    <select name="" id="s4">
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="sub">Principle of Management</td>
+                <td class="sub">2 (Theory)</td>
+                <td class="">
+                    <select name="" id="s5">
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="sub">Civil Eng. Drawing and plan</td>
+                <td class="sub">2 (Lab)</td>
+                <td class="">
+                    <select name="" id="s6">
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!--<tr>
+                <td class="sub">Principle of Management</td>
+                <td class="sub">2 (Theory)</td>
+                <td class="">
+                    <select name="" id="s7">
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                    </select>
+                </td>
+            </tr> -->
+
+            <!--<tr>
+                <td class="sub">Community Service</td>
+                <td class="sub">0 (Suppl. Course)</td>
+                <td class="">
+                    <select name="" id="s8">
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                    </select>
+                </td>
+            </tr> -->
+
+
+            <tr>
+                <td class="sub"></td>
+                <td class="final">
+                    <button onclick="calc()" class="but" id="but"> Calculate</button>
+                </td>
+                <td class="ans" id="a2">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <p class="footer">©2023 The Aspirants</p>
+    <hr>
+        <!-- <div class="main">
+            <table>
+                <tr>
+                    <td>
+                        <h2 class="left">Digital Logic Design</h2>
+                    </td>
+                    <td>
+                        <select name="" id="s1">
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                        </select>
+                    </td>
+                    <td>
+                        <h2 class="right">Network Theory</h2>
+                    </td>
+                    <td>
+                        <select name="" id="s5">
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                        </select>
+                    </td>
+                
+                    <td>
+                        <div class="ans">
+                            <h2 id="a2"></h2>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2 class="left">VCPD</h2>
+                    </td>
+                    <td>
+                        <select name="" id="s2">
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <h2 class="right">Signal & System</h2>
+                    </td>
+                    <td>
+                        <select name="" id="s6">
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2 class="left">Electronic Device Ckts.</h2>
+                    </td>
+                    <td>
+                        <select name="" id="s3">
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <h2 class="right">PoE</h2>
+                    </td>
+                    <td>
+                        <select name="" id="s7">
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2 class="left">Community Service</h2>
+                    </td>
+                    <td>
+                        <select name="" id="s4">
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <h2 class="right">DD Lab</h2>
+                    </td>
+                    <td>
+                        <select name="" id="s8">
+                            <option value="A+">A+</option>
+                            <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                        </select>
+                    </td>
+                </tr>
+                
+            </table>
+        </div> -->
+        
+</body>
+
+<script>
+    function calc() {
+        var t=0;
+
+        //Sm
+        var grd=document.getElementById('s1').value;
+        if(grd=='A+') t+=10*4;
+        if(grd=='A') t+=9*4;
+        if(grd=='B+') t+=8*4;
+        if(grd=='B') t+=7*4;
+        if(grd=='C+') t+=6*4;
+        if(grd=='C') t+=5*4;
+        
+
+        //St
+        var grd=document.getElementById('s2').value;
+        if(grd=='A+') t+=10*4;
+        if(grd=='A') t+=9*4;
+        if(grd=='B+') t+=8*4;
+        if(grd=='B') t+=7;
+        if(grd=='C+') t+=6*4;
+        if(grd=='C') t+=5*4;
+        
+
+        //Maths
+        var grd=document.getElementById('s3').value;
+        if(grd=='A+') t+=10*4;
+        if(grd=='A') t+=9*4;
+        if(grd=='B+') t+=8*4;
+        if(grd=='B') t+=7*4;
+        if(grd=='C+') t+=6*4;
+        if(grd=='C') t+=5*4;
+        
+
+    
+          //Cm
+        var grd=document.getElementById('s4').value;
+        if(grd=='A+') t+=10*4;
+        if(grd=='A') t+=9*4;
+        if(grd=='B+') t+=8*4;
+        if(grd=='B') t+=7*4;
+        if(grd=='C+') t+=6*4;
+        if(grd=='C') t+=5*4;
+        
+
+        //POM
+        var grd=document.getElementById('s5').value;
+        if(grd=='A+') t+=10*2;
+        if(grd=='A') t+=9*2;
+        if(grd=='B+') t+=8*2;
+        if(grd=='B') t+=7*2;
+        if(grd=='C+') t+=6*2;
+        if(grd=='C') t+=5*2;
+        
+
+        //DandP
+        var grd=document.getElementById('s6').value;
+        if(grd=='A+') t+=10*2;
+        if(grd=='A') t+=9*2;
+        if(grd=='B+') t+=8*2;
+        if(grd=='B') t+=7*2;
+        if(grd=='C+') t+=6*2;
+        if(grd=='C') t+=5*2;
+
+        //pom
+        /*var grd=document.getElementById('s7').value;
+        if(grd=='A+') t+=10*2;
+        if(grd=='A') t+=9*2;
+        if(grd=='B+') t+=8*2;
+        if(grd=='B') t+=7*2;
+        if(grd=='C+') t+=6*2;
+        if(grd=='C') t+=5*2;*/
+        
+        document.getElementById('a2').innerHTML="SPI: "+(t/20).toFixed(4);
+
+        
+    }
+</script>
+
+</html>
